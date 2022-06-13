@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.mf{
+    background: #c70aab;
+    padding: 0 60px;
+    color: #070707;
+}
+
+.nf{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 820px;
+}
+
+.cl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.cl h1{
+    font-size: 90px;
+}
+
+.cl p{
+    font-size: 20px;
+}
+.cr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pics{
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px){
+    .mf{
+        padding: 30px;
+    }
+    .nf{
+        grid-template-columns: 1fr;
+    }
+    .cl h1{
+        font-size: 70px ;
+    }
+}
+
+@media screen and (max-width: 468px){
+    .nf{
+        grid-template-rows: 600px;
+    }
+    .cl h1{
+        font-size: 32px;
+    }
+}
+/*next segment*/
+.abt{
+    padding: 60px 60px;
+    background: #c70aab;
+    color: #070707;
+}
+.abtc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.abtc h1{
+    font-size: 110px;
+    color: rgb(22, 72, 163);
+    margin-bottom: 32px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 700px;
+}
+.des{
+    padding-right: 20px;
+}
+.des h2{
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+.des p{
+    line-height: 2.3;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+}
+.mypic{
+    width: 420px;
+    height: 610px;
+}
+
+@media screen and (max-width:1000px){
+    .abt{
+        padding: 30px;
+    }
+    .content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .pic{
+        margin-top: 40px;
+    }
+    .abtc h1{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width:468px){
+    .des h2{
+        font-size: 32px;
+    }
+    .mypic{
+        width:100%;
+        height:100%;
+    }
+}
+
+/*skills*/
+.skills{
+    background: #c70aab;
+    color: #000;
+    position: relative;
+}
+.skillfrm{
+    background: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+}
+.skillgrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 700px;
+}
+.skillfrm h1{
+    font-size: 50px;
+}
+.skillleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 50px;
+}
+.skillcon{
+    display: flex;
+    align-items: flex-start;
+}
+.skillcon img{
+    margin-right: 50px;
+}
+.skilldes h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.skilldes p{
+    line-height: 2;
+}
+.mac{
+    height: 700px;
+    width: 100%;
+}
+.yb{
+    position: absolute;
+    background: rgb(83, 30, 227);
+    height:80px;
+    bottom:-40px;
+    right: 0;
+    width: 100%;
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.yb img{
+    margin: 0 40px;
+}
+.yb p{
+    margin-right: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.skilldes a{
+    font-size: 35px;
+}
+
+@media screen and (max-width:768px){
+    .skillgrid{
+        grid-template-columns: 1fr;
+    }
+    .mac{
+        display: none;
+    }
+    .yb{
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width:468px){
+    .skillfrm{
+        padding-top: 100px;
+        padding-bottom: 200px;
+        padding-left: 16px;
+    }
+    
+    .skillgrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 900px;
+    }
+    .skillfrm h1{
+        text-align: center;
+        margin-bottom: 160px;
+    }
+    .skillleft{
+        padding: 0 24px;
+    }
+    .skillcon{
+        margin-top: 40px;
+    }
+    .skillcon img{
+        margin-right: 16px;
+    }
+    .yb img{
+        margin: 0 10px;
+    }
+    .yb p{
+        margin-right: 15px;
+    }
+}
+@media(min-width:280px) and (max-width:320px){
+    .skilldes p{
+        font-size: 10px;
+    }
+    .skilldes h2{
+        font-size: 12px;
+    }
+}
